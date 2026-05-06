@@ -61,7 +61,7 @@ body {
 }
 
 .layout__left p {
-  margin-bottom: car(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
 }
 
 .layout__title {
