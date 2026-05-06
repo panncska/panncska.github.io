@@ -60,11 +60,15 @@ body {
   margin-top: -2rem; 
 }
 
+.layout__left p {
+  margin-bottom: car(--spacing-lg);
+}
+
 .layout__title {
   font-family: var(--font-serif);
   font-size: var(--fs-title);
   font-weight: 400;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 /* Social Icons */
@@ -162,6 +166,10 @@ body {
 
   .layout__title {
     font-size: 2.6rem;
+  }
+
+  .socials {
+    justify-content: center;
   }
 }
 
