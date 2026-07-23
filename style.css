@@ -21,8 +21,6 @@
   /* Fonts */
   --font-display: 'Playfair Display', serif;
   --font-body: 'Montserrat', sans-serif;
-  --font-script: 'Imperial Script', cursive;
-
 
   /* Type scale — every heading/body element in the site pulls from here */
   --text-h1: clamp(2rem, 4vw, 2.75rem);
