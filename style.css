@@ -709,6 +709,7 @@ h3 {
   background-image: url("assets/matejko.jpg");
   background-size: cover;
   background-position-y: 40%;
+  background-position-x: right;
 }
 
 
@@ -835,6 +836,13 @@ h3 {
     grid-template-columns: 1fr auto;
   }
 
+  .social-links-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 1.5rem;
+  }
+
   .site-logo {
     order: -1;
   }
@@ -950,6 +958,15 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .book-detail {
+    background-size: 200%;
+    background-repeat: repeat;
+  }
+
+  #hero-heading {
+    font-size: 1.5rem;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: flex-start;
@@ -959,7 +976,12 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .contact-inner {
+    width: 100%;
+  }
+
   .arc-form-inner {
-    padding: 7.5rem 3rem;
+    padding: 6rem 2rem;
+    background-size: 300%;
   }
 }
