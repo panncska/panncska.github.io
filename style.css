@@ -509,6 +509,8 @@ h3 {
 
 .book-detail-actions {
   margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 /* ============ PATREON ============ */
@@ -939,10 +941,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .about-image {
-    padding-left: 1rem;
-  }
-
   .book-detail img {
     display: none;
   }
@@ -954,6 +952,23 @@ h3 {
 }
 
 @media (max-width: 600px) {
+  :root {
+    --text-body-sm: 0.8rem;
+    --text-h2: 1.88rem;
+    --text-h3: 1.33rem;
+    --space-section-x: 1.1rem;
+    --space-section-y: 3rem;
+
+  }
+
+  .site-logo-name {
+    font-size: 2.5rem;
+  }
+
+  #painting {
+    height: 350px;
+  }
+
   .series-actions {
     grid-template-columns: 1fr;
   }
@@ -976,12 +991,60 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .contact {
+    padding: 0;
+  }
+
   .contact-inner {
     width: 100%;
+    padding: 2.5rem 1rem;
+  }
+
+  .support-banner h2 {
+    text-align: center;
+  }
+
+  .about {
+    padding: 4.4rem 1rem;
+  }
+
+  .btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-inner {
+    padding: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .social-links-list a img {
+    width: 100%;
+    max-width: 2.2rem;
+  }
+
+  .arc-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #book-heading {
+    margin-top: 0;
+  }
+
+  .book-detail-grid {
+    gap: 0;
   }
 
   .arc-form-inner {
-    padding: 6rem 2rem;
-    background-size: 500%;
+    padding: 4rem 2.2rem 5rem;
+    background-size: 125%;
+    background-image: url("assets/scrollsm.jpg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+
+  .framed {
+    padding: 4rem 3rem;
   }
 }
