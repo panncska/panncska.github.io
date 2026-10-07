@@ -21,7 +21,7 @@ scene.add(light)
 
 const loader = new THREE.TextureLoader()
 
-const urls = ["book/edge.png", "book/spine.jpeg", "book/top.png", "book/bottom.png", "book/front.jpg", "book/back.jpeg"];
+const urls = ["book/edge.jpeg", "book/spine.jpeg", "book/top.jpeg", "book/bottom.jpeg", "book/front.png", "book/back.png"];
 
 const materials = urls.map(url => {
   return new THREE.MeshLambertMaterial({
