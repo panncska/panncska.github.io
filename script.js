@@ -131,8 +131,8 @@ function initChatWidget() {
  * retailer links per region.
  */
 function initRegionFlags() {
-  const flagButtons = document.querySelectorAll('.preorder-btn');
-  const preorderLinks = document.querySelectorAll('a[href="#preorder"]');
+  const flagButtons = document.querySelectorAll('.order-btn');
+  const orderLinks = document.querySelectorAll('a[href="#order"]');
 
   const regionUrls = {
     AU: 'https://www.booktopia.com.au/',
@@ -148,7 +148,7 @@ function initRegionFlags() {
       const url = regionUrls[region];
 
       if (url) {
-        preorderLinks.forEach((link) => {
+        orderLinks.forEach((link) => {
           link.dataset.region = region;
         });
       }

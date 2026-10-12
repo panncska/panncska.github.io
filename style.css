@@ -271,16 +271,17 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.preorder-section {
+.order-section {
   display: flex;
   gap: 0.5rem;
 }
 
-.preorder-btn {
+.order-btn {
   border: none;
   background: none;
   font-size: 1.5rem;
@@ -292,8 +293,8 @@ h3 {
   transition: transform var(--transition);
 }
 
-.preorder-btn:hover,
-.preorder-btn:focus-visible {
+.order-btn:hover,
+.order-btn:focus-visible {
   transform: scale(1.15);
 }
 
@@ -325,8 +326,20 @@ h3 {
 }
 
 .btn-primary:hover,
-.btn-primary:focus-visible {
+.btn-primary:focus-visible,
+.btn-primary-inverted:hover,
+.btn-primary-inverted:focus-visible {
   transition: scale(1.1);
+}
+
+.btn-primary-inverted {
+  background: var(--color-white);
+  color: var(--color-primary-deep);
+  border: 3px solid var(--color-primary-deep);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: var(--radius-sm);
 }
 
 .btn-dark {
@@ -510,7 +523,6 @@ h3 {
 .book-detail-actions {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: center;
 }
 
 /* ============ PATREON ============ */
